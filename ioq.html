@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Rampart+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>IOQ Dates</title>
+</head>
+
+
+<body>
+
+<h1 style="text-align: center;">IOQC and IOQA in</h1>
+<h1 id="timer003"></h1>
+<script>
+    var countDownDate003 = new Date("Mar 20, 2022 09:00:00").getTime();
+    var now003 = new Date().getTime();
+      var distance003 = countDownDate003 - now003;
+      var days003 = Math.floor(distance003 / (1000 * 60 * 60 * 24));
+      var hours003 = Math.floor((distance003 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes003 = Math.floor((distance003 % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds003 = Math.floor((distance003 % (1000 * 60)) / 1000);
+      document.getElementById("timer003").innerHTML = days003 + "d " + hours003 + "h ";
+
+
+      if (distance003 < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      } 
+    var x = setInterval(function() {
+      var now003 = new Date().getTime();
+      var distance003 = countDownDate003 - now003;
+      var days003 = Math.floor(distance003 / (1000 * 60 * 60 * 24));
+      var hours003 = Math.floor((distance003 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes003 = Math.floor((distance003 % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds003 = Math.floor((distance003 % (1000 * 60)) / 1000);
+      document.getElementById("timer003").innerHTML = days003 + "d " + hours003 + "h ";
+
+      if (distance003 < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+</script>
+  <script async src="//static.getclicky.com/101331055.js"></script>
+
+
+</body>
